@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     26819,        725]
-NotebookOptionsPosition[     24752,        681]
-NotebookOutlinePosition[     25191,        698]
-CellTagsIndexPosition[     25148,        695]
+NotebookDataLength[     35305,        939]
+NotebookOptionsPosition[     33016,        892]
+NotebookOutlinePosition[     33484,        910]
+CellTagsIndexPosition[     33441,        907]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -677,11 +677,223 @@ sonification-and-music\\\\horizon3.mp4\"\>"], "Output",
    3.9346009512140803`*^9, 3.934601091320071*^9, 3.9346011306816835`*^9, 
    3.9346011860094557`*^9, 3.9346012163611526`*^9, 3.9346013591111255`*^9},
  CellLabel->"Out[12]=",ExpressionUUID->"020b7864-d5e6-44b1-9323-0053683c67ee"]
-}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Animation", " ", "for", " ", "audio"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"tl", "=", "12"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"anim", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Graphics", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "8"}], ",", 
+               RowBox[{"-", "4.5"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"8", ",", 
+               RowBox[{"-", "4.5"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"8", ",", "4.5"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "8"}], ",", "4.5"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "8"}], ",", 
+               RowBox[{"-", "4.5"}]}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Working Memory\>\"", ",", "tl", ",", "Purple"}], 
+             "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"5.5", "*", 
+               RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"6", 
+                  RowBox[{"Cos", "[", 
+                   RowBox[{"x", "-", "4"}], "]"}]}]}], "]"}]}]}], "}"}]}], 
+           "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Experience\>\"", ",", "tl", ",", "Green"}], "]"}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"6", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"6", 
+                  RowBox[{"Cos", "[", "x", "]"}]}]}], "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"3", "+", "x", "+", 
+                 RowBox[{"4", "*", 
+                  RowBox[{"Sin", "[", 
+                   RowBox[{
+                    RowBox[{"2", "x"}], "-", ".6"}], "]"}]}]}], "]"}]}]}], 
+             "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Interest\>\"", ",", "tl", ",", "Green"}], "]"}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"6", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"6", 
+                  RowBox[{"Cos", "[", "x", "]"}]}], "+", "2"}], "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"3", "+", "x", "+", 
+                 RowBox[{"4", "*", 
+                  RowBox[{"Sin", "[", 
+                   RowBox[{
+                    RowBox[{"2", "x"}], "-", ".6"}], "]"}]}]}], "]"}]}]}], 
+             "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Education\>\"", ",", "tl", ",", "Green"}], "]"}], 
+            ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"6", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"6", 
+                  RowBox[{"Cos", "[", "x", "]"}]}]}], "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"3", "+", "x", "+", 
+                 RowBox[{"4", "*", 
+                  RowBox[{"Sin", "[", 
+                   RowBox[{"2", "x"}], "]"}]}]}], "]"}]}]}], "}"}]}], "]"}], 
+          ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Absolute Thresholds\>\"", ",", "tl", ",", "Blue"}], 
+             "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"4", "*", 
+               RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"x", "+", ".3"}], "]"}]}]}], "}"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Masking Thresholds\>\"", ",", "tl", ",", "Blue"}], 
+             "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"4", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{
+                 RowBox[{"x", "^", "2"}], "-", "5"}], "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"Cos", "[", "x", "]"}], "+", "2.4"}], "]"}]}]}], 
+             "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Just Noticeable Differences\>\"", ",", "tl", ",", "Blue"}], 
+             "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"4", "*", 
+               RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"x", "+", ".3"}], "]"}]}]}], "}"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Schema Based Auditory Scene Analysis\>\"", ",", "tl", ",", 
+              "Purple"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"Sin", "[", 
+                  RowBox[{"x", "+", "Pi"}], "]"}]}], "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"x", "+", 
+                 RowBox[{"Pi", "/", "2"}]}], "]"}]}]}], "}"}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Text", "[", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Primitive Auditory Scene Analysis\>\"", ",", "tl", ",", 
+              "Purple"}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"3", "*", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"x", "+", "Pi"}], "]"}]}], ",", 
+              RowBox[{"3", "*", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"x", "+", "Pi"}], "]"}]}]}], "}"}]}], "]"}]}], 
+         "\[IndentingNewLine]", "}"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", 
+         RowBox[{"32", "Pi"}], ",", 
+         RowBox[{"Pi", "/", "100"}]}], "}"}]}], "]"}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.9349424088307223`*^9, 3.934942749215478*^9}, {
+  3.93494278224927*^9, 3.9349428605603504`*^9}, {3.934942907396225*^9, 
+  3.934943110033457*^9}, {3.9349431661668863`*^9, 3.9349431780496283`*^9}, {
+  3.934943212719025*^9, 3.9349433226680017`*^9}, {3.9349433632065163`*^9, 
+  3.93494337645144*^9}, {3.9349434606329594`*^9, 3.9349434977615557`*^9}, {
+  3.9349435724121847`*^9, 3.9349435929620914`*^9}, {3.9349436310863914`*^9, 
+  3.9349436312568197`*^9}, {3.9349437709790483`*^9, 3.9349439035800915`*^9}, {
+  3.9349439463771477`*^9, 3.9349439781308126`*^9}, {3.934944085798029*^9, 
+  3.934944094531913*^9}},
+ CellLabel->"In[96]:=",ExpressionUUID->"ded91aa4-2177-473a-afac-a3ada7fa464c"],
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<C:\\\\Users\\\\t_ziemer\\\\Desktop\\\\sonification-music\\\\\
+sonification-and-music\\\\anim.mp4\>\"", ",", "anim", ",", 
+   RowBox[{"\"\<FrameRate\>\"", "->", " ", "25"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.93494398319389*^9, 3.934944014508656*^9}, {
+  3.934944098248888*^9, 
+  3.934944114932036*^9}},ExpressionUUID->"eabeb08e-fba0-417f-86f0-\
+7a2822e95a03"]
 },
 WindowSize->{1152., 585.6},
 WindowMargins->{{-5.3999999999999995`, Automatic}, {-5.399999999999977, 
    Automatic}},
+Magnification:>1. Inherited,
 FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"4d219c5b-87ff-4e48-ae2d-13c85d3fdafc"
@@ -726,7 +938,9 @@ Cell[18783, 535, 4787, 121, 552, "Input",ExpressionUUID->"63690a1a-faaa-4078-9f2
 Cell[CellGroupData[{
 Cell[23595, 660, 706, 11, 171, "Input",ExpressionUUID->"b6a4ff5b-46f4-46ab-beba-fe5b75051897"],
 Cell[24304, 673, 432, 5, 103, "Output",ExpressionUUID->"020b7864-d5e6-44b1-9323-0053683c67ee"]
-}, Open  ]]
+}, Open  ]],
+Cell[24751, 681, 7836, 198, 970, "Input",ExpressionUUID->"ded91aa4-2177-473a-afac-a3ada7fa464c"],
+Cell[32590, 881, 422, 9, 133, "Input",ExpressionUUID->"eabeb08e-fba0-417f-86f0-7a2822e95a03"]
 }
 ]
 *)
